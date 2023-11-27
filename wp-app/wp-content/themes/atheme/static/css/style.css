@@ -3,13 +3,10 @@
 
 /* Style Index.html */
 
-.navbar {
+.navbar-nav .nav-link {
     padding-top: 200px 0;
 }
 
-.test {
-    background-color: aqua;
-    width: 200px;
-    height: 200px;
-    position: absolute;
+.footer {
+    background-color: aqua !important;
 }
