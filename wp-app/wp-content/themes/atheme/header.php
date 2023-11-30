@@ -13,12 +13,25 @@
         wp_head();
         ?>
 
+<style>
+
+        .navbar-nav > li {
+            margin-right: 15px; /* Adjust the value as needed */
+        }
+
+
+        .navbar-nav > li > a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+
     </head>
     <body>
         <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3";>
             <div class="container">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" style='color: blue; font-size: 20px; padding-right: 10px; font-size: 30px;'>
                     <?php
                     echo get_bloginfo('name');
                     ?>
