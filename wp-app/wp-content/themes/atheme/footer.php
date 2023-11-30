@@ -1,4 +1,9 @@
-<div>Footer</div>
+<footer class="bg-dark text-light text-center py-4">
+            <p>&copy; 2023 Sports Newsletter. All rights reserved.</p>
+        </footer>
 
-</body>
+        <?php
+        wp_footer();
+        ?>
+    </body>
 </html>

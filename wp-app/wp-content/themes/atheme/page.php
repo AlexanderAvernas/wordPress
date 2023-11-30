@@ -1,14 +1,32 @@
-<?php get_header();
+<?php
+get_header();
 ?>
-<!-- start loop -->
 
-<?php if (have_posts()):
-    while (have_posts()):
-        the_post() ?>
-         <h1><?php the_title() ?></h1>
-         <p><?php the_content(); ?></p>
-     <?php endwhile; ?>
-<?php endif; ?>
 
-<?php get_footer();
-?>
+        <!-- Page Content -->
+        <div id="carouselExampleControls" class="carousel slide mt-5" data-bs-ride="carousel">
+        <header class="hero" style="background-color: #f5f5f5; padding: 30px 0; text-align: center;">
+    <div class="container text-white">
+        <h1 class="display-6" style="color: black; font-weight: 400;">
+            <?php the_title(); ?> <br>
+        </h1>
+    </div>
+</header>
+
+        <?php
+
+        if (have_posts()) {
+            while (have_posts()) {
+                the_post();
+
+
+                get_template_part('templates-parts/content', 'page');
+            }
+        }
+
+        ?>
+            </div>
+
+        <?php
+        get_footer();
+        ?>
