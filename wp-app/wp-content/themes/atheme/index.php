@@ -7,7 +7,9 @@ get_header();
             <header class="hero" style="background-color: #f5f5f5; padding: 30px 0; text-align: center;">
     <div class="container text-white">
         <h1 class="display-6" style="color: black; font-weight: 400;">
-            News
+            <?php
+            single_post_title();
+            ?>
         </h1>
     </div>
 </header>
@@ -18,9 +20,11 @@ get_header();
                 the_post();
 
 
+
                 get_template_part('templates-parts/content', 'allnews');
             }
         }
+        
 
         ?>
 
