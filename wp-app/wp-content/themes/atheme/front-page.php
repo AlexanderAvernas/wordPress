@@ -1,7 +1,7 @@
 <?php
 get_header();
 ?>
-<header class="hero" style="background-image: url(<?php the_post_thumbnail_url();?>); background-size: cover; background-position: center center; height: 550px; padding-top: 200px; margin-top: 55px;">
+<header class="hero" style="background-image: url(<?php the_post_thumbnail_url();?>); background-size: cover; background-position: center center; height: 550px; padding-top: 200px;">
             <div class="container text-center text-white">
                 <h1 class="display-4" style="color: rgb(15, 15, 16); background-color: rgba(173, 216, 230, 0.5); font-weight: 400;">
                    <?php the_title(); ?> <br>
@@ -11,7 +11,7 @@ get_header();
         </header>
 
         <!-- Page Content -->
-        <div id="carouselExampleControls" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide mt-0" data-bs-ride="carousel">
 
         <?php
 

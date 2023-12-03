@@ -29,7 +29,7 @@
     </head>
     <body>
         <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3";>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3";>
             <div class="container">
                 <a class="navbar-brand" style='color: blue; font-size: 20px; padding-right: 10px; font-size: 30px;'>
                     <?php
