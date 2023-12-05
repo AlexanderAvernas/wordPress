@@ -31,7 +31,7 @@
         <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3";>
             <div class="container">
-                <a class="navbar-brand" style='color: blue; font-size: 20px; padding-right: 10px; font-size: 30px;'>
+                <a class="navbar-brand" style='color: rgba(255, 165, 0, 1.0); font-size: 20px; padding-right: 10px; font-size: 30px;'>
                     <?php
                     echo get_bloginfo('name');
                     ?>

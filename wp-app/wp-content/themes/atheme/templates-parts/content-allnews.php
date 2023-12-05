@@ -1,6 +1,4 @@
 <div class="container">
-    <div class="row">
-        <div class="col-md-8 mb-4">
             <div class="card" style='width: 100%;'>
                 <img src="<?php the_post_thumbnail_url(); ?>" class="card-img-top" alt="News 1" />
                 <div class="card-body">
@@ -8,14 +6,11 @@
                     <p class="card-text">
                         <ul>
                             <li style="color: #777;"><?php the_time('j F, Y'); ?></li>
-                            <li style="color: #777;"><?php the_category(", ") ?></li>
+                            <li style="color: rgba(34, 34, 100, 1.0);"><?php the_category(", ") ?></li>
                         </ul>
                         <?php the_excerpt(); ?>
                     </p>
                     <a class="more-link custom-newslink" href="<?php the_permalink(); ?>">Read More</a>
                 </div>
             </div>
-        </div>
-
-    </div>
 </div>

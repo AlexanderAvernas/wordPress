@@ -1,16 +1,16 @@
 <?php get_header(); ?>
 
 <!-- Page Content -->
-<header class="hero" style="background-color: rgba(34, 34, 100, 0.7); padding: 5px 0; text-align: center;">
+<header class="hero" style=" padding: 5px 0; text-align: center;">
     <div class="container text-white">
-        <h4 class="display-8" style="color: white; font-weight: 600;">
+        <h4 class="display-6" style="color: black; font-weight: 600;">
             <?php single_post_title(); ?>
         </h4>
     </div>
 </header>
 <div class="container mt-5">
     <div class="row">
-        <div class="carousel slide col-md-8 custom-newscard" data-bs-ride="carousel">
+        <div class="carousel slide col-md-7 custom-newscard" data-bs-ride="carousel">
             <?php
             if (have_posts()) {
                 while (have_posts()) {

@@ -4,7 +4,7 @@
                     <!-- Column 1 -->
                     <div class="col-md-4">
                     <div class="container custom-footer-container">
-                        <h5>About</h5>
+                        <h5 style="color: rgba(255, 165, 0, 1.0);">About</h5>
                         <div class="inner-footer-container">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum turpis sed neque feugiat, et fermentum justo pharetra.</p>
                         </div>
@@ -12,6 +12,7 @@
                     </div>
                     <!-- Column 2 -->
                     <div class="col-md-4">
+                        <div class='custom-footer-container'>
                         <!-- <div class="container custom-footer-container">
                         <h5>Contact Information</h5>
                         <div class="inner-footer-container">
@@ -23,10 +24,11 @@
                             dynamic_sidebar("adress widget");
                         }  ?>
                     </div>
+                    </div>
                     <!-- Column 3 -->
                     <div class="col-md-4">
     <div class="container custom-footer-container">
-        <h5>Follow us on social media</h5>
+        <h5 style="color: rgba(255, 165, 0, 1.0);" >Follow us on social media</h5>
         <div class="inner-footer-container">
             <p class="fab fa-facebook-f social-logo"> Facebook</p>
             <p class="fab fa-twitter social-logo"> Twitter</p>

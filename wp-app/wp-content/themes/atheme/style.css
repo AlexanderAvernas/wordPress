@@ -7,6 +7,11 @@ Author URI: http://www.yourwebsite.com
 Version: 2.4
 Text Domain: atheme
 */
+
+body {
+    background-color: rgba(245, 245, 245, 1.0);
+}
+
 main a {
     text-decoration: underline;
 }
@@ -28,27 +33,32 @@ a {
 }
 
 .custom-newshead:hover {
-    color: rgb(8, 8, 212);
+    color:  rgba(255, 165, 0, 1.0);
 }
 
 .custom-newslink {
-    color: #e74c3c;
+    color: rgba(255, 165, 0, 1.0);
     font-weight: bold;
     text-decoration: underline;
 }
 
 .custom-newslink:hover {
-    color: blue;
+    color: rgba(34, 34, 100, 1.0);
 }
 
 
 /*Sidebar custom styles*/
 .custom-sidebarcontainer {
-    background-color: rgb(225, 225, 240);
+    background-color: white;
     width: 80%;
     padding: 20px;
     border-radius: 7px;
-    border: 3px solid rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.custom-sidebarcontainer h3 {
+    color: rgba(34, 34, 100, 1.0);
+
 }
 
 .custom-sidebarcontainer a {
@@ -58,14 +68,14 @@ a {
 }
 
 .custom-sidebarcontainer a:hover {
-    color: rgb(8, 8, 212); /* Change this color to your desired hover color */
+    color:  rgba(255, 165, 0, 1.0); /* Change this color to your desired hover color */
 }
 
 .custom-pagination {
     padding-bottom: 15px;
     padding-left: 15px;
     text-align: center; /* Center the pagination links */
-    color: blue;
+    color: rgba(255, 165, 0, 1.0);
 }
 
 /*Footer styles*/
@@ -81,8 +91,10 @@ a {
     align-items: center;
 
 }
+.inner-footer-container h5 {
+    color: rgba(255, 165, 0, 1.0);
 
-/*Contact styling*/
+}
 
 /* Contact styling */
 
