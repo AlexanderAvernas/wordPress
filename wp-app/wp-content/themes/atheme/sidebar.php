@@ -1,12 +1,13 @@
+<div class="container custom-sidebarcontainer">
 <div class="widget">
-    <h2>Pages</h2>
+    <h3>Pages</h3>
     <ul>
         <?php
         wp_list_pages("title_li=")?>
     </ul>
 </div>
 <div class="widget">
-    <h2>Archive</h2>
+    <h3>Archive</h3>
     <ul>
     <?php
      wp_get_archives("type=monthly");
@@ -17,8 +18,9 @@
 </div>
 
 <div class="widget">
-    <h2>Chategories</h2>
+    <h3>Chategories</h3>
     <ul>
         <?php wp_list_categories('title_li='); ?>
     </ul>
+</div>
 </div>

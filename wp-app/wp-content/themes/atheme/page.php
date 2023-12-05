@@ -4,12 +4,12 @@ get_header();
 
 
         <!-- Page Content -->
-        <div id="carouselExampleControls" class="carousel slide mt-5" data-bs-ride="carousel">
-        <header class="hero" style="background-color: #f5f5f5; padding: 30px 0; text-align: center;">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <header class="hero" style="background-color: rgba(34, 34, 100, 0.7); padding: 5px 0; text-align: center; margin-bottom: 15px;">
     <div class="container text-white">
-        <h1 class="display-6" style="color: black; font-weight: 400;">
+        <h4 class="display-8" style="color: white; font-weight: 600;">
             <?php the_title(); ?> <br>
-        </h1>
+        </h4>
     </div>
 </header>
 

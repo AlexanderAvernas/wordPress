@@ -9,6 +9,7 @@ add_action('after_setup_theme', 'atheme_titlename');
 function atheme_menus() {
     $locations = array(
         'primary' => 'Desktop Navbar',
+        'sidemenu' => 'side menu'
     );
 
     register_nav_menus($locations);
@@ -34,6 +35,14 @@ function atheme_styles()
         '5.3.0',
         'all'
     );
+
+    wp_enqueue_style(
+        'font-awesome',
+        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css',
+        array(),
+        '5.15.4',
+        'all'
+    );
 }
 add_action('wp_enqueue_scripts', 'atheme_styles');
 
@@ -46,24 +55,36 @@ wp_enqueue_script('atheme_script',  get_template_directory_uri()."/assets/js/mai
 }
 add_action('wp_enqueue_scripts', 'atheme_scripts');
 
+function atheme_register_sidebars() {
+    register_sidebar( array(
+    'name' => 'adress widget',
+    'id' => 'adress-widget',
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget' => '</div>'
 
-function atheme_widget() {
+    ) );
+   }
+   add_action( 'widgets_init', 'atheme_register_sidebars' );
 
-    register_sidebar(
-        array(
-            'before_title' => '',
-            'after_title' => '',
-            'before_widget' => '',
-            'after_widget' => '',
-            'name' => 'Sidebar Area',
-            'id' => 'sidebar-1',
-            'description' => 'Sidebar Widget Area'
 
-        ),
-    );
 
-}
+// function atheme_widget() {
 
-add_action( 'widgets_init', 'atheme_widget');
+//     register_sidebar(
+//         array(
+//             'before_title' => '',
+//             'after_title' => '',
+//             'before_widget' => '',
+//             'after_widget' => '',
+//             'name' => 'Sidebar Area',
+//             'id' => 'sidebar-1',
+//             'description' => 'Sidebar Widget Area'
+
+//         ),
+//     );
+
+// }
+
+// add_action( 'widgets_init', 'atheme_widget');
 
 ?>
