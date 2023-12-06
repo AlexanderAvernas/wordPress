@@ -3,7 +3,7 @@ get_header();
 ?>
 
         <!-- Page Content -->
-        <div id="carouselExampleControls" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide m-5" data-bs-ride="carousel">
 
         <h1>Page not found</h1>
 

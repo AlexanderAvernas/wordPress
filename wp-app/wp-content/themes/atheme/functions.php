@@ -63,28 +63,14 @@ function atheme_register_sidebars() {
     'after_widget' => '</div>'
 
     ) );
+    register_sidebar( array(
+    'name' => 'home widget',
+    'id' => 'home-widget',
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget' => '</div>'
+
+    ) );
    }
    add_action( 'widgets_init', 'atheme_register_sidebars' );
-
-
-
-// function atheme_widget() {
-
-//     register_sidebar(
-//         array(
-//             'before_title' => '',
-//             'after_title' => '',
-//             'before_widget' => '',
-//             'after_widget' => '',
-//             'name' => 'Sidebar Area',
-//             'id' => 'sidebar-1',
-//             'description' => 'Sidebar Widget Area'
-
-//         ),
-//     );
-
-// }
-
-// add_action( 'widgets_init', 'atheme_widget');
 
 ?>

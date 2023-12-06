@@ -42,10 +42,12 @@
 <div class="container custom-pagination">
     <nav aria-label="Page navigation">
         <?php
-        echo '<h5>' . paginate_links(array(
-            'prev_text' => __('« Previous'),
-            'next_text' => __('Next »'),
-        )) . '</h5>';
+        echo '<h5>' . paginate_links(
+            array(
+                'prev_text' => __('« Previous'),
+                'next_text' => __('Next »'),
+            )
+        ) . '</h5>';
         ?>
     </nav>
 </div>

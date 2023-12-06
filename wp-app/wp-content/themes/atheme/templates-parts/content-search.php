@@ -1,5 +1,5 @@
 <div class="container">
-            <div class="card" style='width: 100%; margin-bottom: 20px;'>
+            <div class="card" style='width: 30%; margin-bottom: 20px;'>
                 <img src="<?php the_post_thumbnail_url(); ?>" class="card-img-top" alt="News 1" />
                 <div class="card-body">
                     <h4 class="card-title"><a class="custom-newshead" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>

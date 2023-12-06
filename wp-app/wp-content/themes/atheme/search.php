@@ -12,7 +12,7 @@ get_header();
                 the_post();
 
 
-                get_template_part('templates-parts/content', 'allnews');
+                get_template_part('templates-parts/content', 'search');
             }
         }
 

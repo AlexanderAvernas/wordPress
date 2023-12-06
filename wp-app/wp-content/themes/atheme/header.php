@@ -14,17 +14,19 @@
         ?>
 
 <style>
+            .navbar-nav > li {
+                margin-right: 15px; /* Adjust the value as needed */
+            }
 
-        .navbar-nav > li {
-            margin-right: 15px; /* Adjust the value as needed */
-        }
+            .navbar-nav > li > a {
+                text-decoration: none;
+                color: white;
+            }
 
-
-        .navbar-nav > li > a {
-            text-decoration: none;
-            color: white;
-        }
-    </style>
+            .navbar-nav > li.current-menu-item > a {
+                color: rgba(255, 165, 0, 1.0);
+            }
+        </style>
 
     </head>
     <body>
@@ -63,8 +65,8 @@
 
                 ?>
                  <?php
-         get_search_form();
-         ?>
+                 get_search_form();
+                 ?>
                 </div>
             </div>
         </nav>
