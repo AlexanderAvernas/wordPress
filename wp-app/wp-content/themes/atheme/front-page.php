@@ -12,7 +12,7 @@ get_header();
             </div>
         </header>
 
-        <!-- Page Content -->
+        
         <div id="carouselExampleControls" class="carousel slide mt-0" data-bs-ride="carousel">
 
         <?php
